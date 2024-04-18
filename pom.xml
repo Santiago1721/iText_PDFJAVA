@@ -1,0 +1,30 @@
+<repositories>
+            <repository>
+                <id>central</id>
+                <name>Central Repository</name>
+                <url>https://repo.maven.apache.org/maven2/</url>
+            </repository>
+        </repositories>
+
+        <dependencies>
+	<!-- add all iText modules -->
+            <dependency>
+                <groupId>com.itextpdf</groupId>
+                <artifactId>itext-core</artifactId>
+                <version>${itext.version}</version>
+                <type>pom</type>
+            </dependency>
+            
+                <dependency>
+            <groupId>org.apache.pdfbox</groupId>
+            <artifactId>pdfbox</artifactId>
+            <version>3.0.2</version>
+            
+                </dependency>
+                
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.5.5</version> <!-- Utiliza la versión más reciente -->
+        </dependency>
+    </dependencies>
